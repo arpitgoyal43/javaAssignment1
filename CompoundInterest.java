@@ -1,5 +1,4 @@
-import java.util.*;
-import java.io.*;
+import java.util.Scanner;
 
 class CompoundInterest
 {
@@ -7,14 +6,13 @@ class CompoundInterest
 	{
 		Scanner in =  new Scanner(System.in);
 		System.out.println("Enter the Principal: ");
-		double p = in.nextDouble();
+		double principle = in.nextDouble();
 		System.out.println("Enter the rate of interest: ");
-		double r = in.nextDouble();
+		double rate = in.nextDouble();
 		System.out.println("Enter the time: ");
-		double t = in.nextDouble();
-		double amt=0;
-		amt = p*(Math.pow((1+r/100),t));
-		System.out.println("Compound Interest : " + amt);	
+		double time = in.nextDouble();
+		double ci = principle*(Math.pow((1+rate/100),time));
+		System.out.println("Compound Interest : " + ci);
 	}
 }
 
