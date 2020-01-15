@@ -1,5 +1,4 @@
-import java.util.*;
-import java.io.*;
+import java.util.Scanner;
 
 class SimpleInterest
 {
@@ -7,13 +6,12 @@ class SimpleInterest
 	{
 		Scanner in =  new Scanner(System.in);
 		System.out.println("Enter the Principal: ");
-		double p = in.nextDouble();
+		double principle = in.nextDouble();
 		System.out.println("Enter the rate of sinterest: ");
-		double r = in.nextDouble();
+		double rate = in.nextDouble();
 		System.out.println("Enter the time: ");
-		double t = in.nextDouble();
-		double si=0;
-		si = (p * r * t)/100;
-		System.out.println("Simple Interest: "+si);	
+		double time = in.nextDouble();
+		double si = (principle * rate * time)/100;
+		System.out.println("Simple Interest: "+si);
 	}
 }
