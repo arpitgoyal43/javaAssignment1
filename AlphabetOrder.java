@@ -1,5 +1,5 @@
-import java.util.*;
-import java.io.*;
+import java.util.Arrays;
+import java.util.Scanner;
 
 class AlphabetOrder {
 	public static void main(String args[]) {
