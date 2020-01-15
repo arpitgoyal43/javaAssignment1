@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Scanner;
 
 public class ReverseString {
     public static void main(String args[])
@@ -6,11 +6,11 @@ public class ReverseString {
         Scanner in = new Scanner(System.in);
         System.out.println("Enter any String: ");
         String str = in.nextLine();
-        String[] temp = str.split(" ");
+        String[] words = str.split(" ");
         String result = "";
-        for(int i=0;i<temp.length;i++)
+        for(int i=0;i<words.length;i++)
         {
-            String word = temp[i];
+            String word = words[i];
             String reverseWord = "";
             for(int j = word.length()-1;j>=0;j--)
             {
