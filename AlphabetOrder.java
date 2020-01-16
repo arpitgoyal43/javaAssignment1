@@ -1,18 +1,15 @@
 import java.util.Scanner;
-import java.util.stream.IntStream;
 
 class AlphabetOrder {
 	public static void main(String args[]) {
-		Scanner in1 = new Scanner(System.in);
+		Scanner input1 = new Scanner(System.in);
 		System.out.println("Enter no. of strings: ");
-		int count = in1.nextInt();
-
-		System.out.println("Enter any string: ");
+		int count = input1.nextInt();
 		String[] str = new String[count];
-		Scanner in2 = new Scanner(System.in);
+		Scanner input2 = new Scanner(System.in);
 		System.out.println("Enter the strings to be sorted in a sequence: ");
 		for (int i = 0; i <count; i++) {
-			str[i] = in2.nextLine();
+			str[i] = input2.nextLine();
 		}
 		String temp;
 		for(int i=0;i<count;i++)
