@@ -24,10 +24,10 @@ class AlphabetOrder {
 				}
 			}
 		}
-		System.out.println("Sorted strings in alphabetical order: ");
+		System.out.println("Sorted strings in upper to lower format: ");
 		for(int i=0;i<count;i++)
 		{
-			System.out.print(str[i]+ " ");
+			System.out.println(str[i]);
 		}
 	}
 }
